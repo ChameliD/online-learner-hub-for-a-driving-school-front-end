@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { error } from 'console';
+import { RegisterPayload } from '../register-payload';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -17,14 +17,14 @@ export class RegisterComponent implements OnInit {
       username: '',
       email: '',
       password: '',
-      confirmPassword: '',
+      confirmPassword: ''
 
     });
     this.registerPayload = {
       username: '',
       email: '',
       password: '',
-      confirmPassword: '',
+      confirmPassword: ''
 
     };
    }
@@ -40,7 +40,7 @@ export class RegisterComponent implements OnInit {
 
     this.authService.register(this.registerPayload).subscribe(data => {
       console.log("Register succes");
-    }, error =>{
+    }, error => {
       console.log("register failed");
     });
   }
