@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit {
     this.loginPayload = {
       username : '',
       password : ''
-    }
+    };
    }
 
   ngOnInit(): void {
