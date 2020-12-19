@@ -19,11 +19,11 @@ export class AuthService {
   }
 
   register(registerPayload: RegisterPayload): Observable<any>{
-    return this.httpClient.post(this.url+'signup', registerPayload);
+    return this.httpClient.post('http://localhost:8080/api/auth/signup/', registerPayload);
   }
 
   login(loginPayload: LoginPayload): Observable<boolean>{
-    return this.httpClient.post<JwtAuthResponse>(this.url+"login",loginPayload).pipe(map(data => {
+    return this.httpClient.post<JwtAuthResponse>('http://localhost:8080/api/auth/'+'login',loginPayload).pipe(map(data => {
       this.localStorageService.store('authenticationToken',data.authenticationToken);
       this.localStorageService.store('username',data.username);
       return true;
