@@ -16,11 +16,11 @@ export class LoginComponent implements OnInit {
   loginPayload:LoginPayload;
   constructor(private authService: AuthService,private router : Router)  {
     this.loginForm=new FormGroup({
-      username: new FormControl(),
+      userName: new FormControl(),
       password: new FormControl()
     });
     this.loginPayload = {
-      username : '',
+      userName : '',
       password : ''
     };
    }
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
-    this.loginPayload.username=this.loginForm.get('username').value;
+    this.loginPayload.userName=this.loginForm.get('userName').value;
     this.loginPayload.password=this.loginForm.get('password').value;
 
     this.authService.login(this.loginPayload).subscribe(data =>{

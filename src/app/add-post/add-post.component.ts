@@ -24,7 +24,7 @@ export class AddPostComponent implements OnInit {
       id: '',
       content: '',
       title: '',
-      username: ''
+      userName: ''
     }
   }
 

@@ -23,15 +23,15 @@ export class AuthService {
   }
 
   login(loginPayload: LoginPayload): Observable<boolean>{
-    return this.httpClient.post<JwtAuthResponse>('http://localhost:8080/api/auth/'+'login',loginPayload).pipe(map(data => {
+    return this.httpClient.post<JwtAuthResponse>('http://localhost:8080/api/auth/login/',loginPayload).pipe(map(data => {
       this.localStorageService.store('authenticationToken',data.authenticationToken);
-      this.localStorageService.store('username',data.username);
+      this.localStorageService.store('userName',data.userName);
       return true;
 
     }));
   }
   isAuthenticated(): boolean{
-    return this.localStorageService.retrieve('username')!=null;
+    return this.localStorageService.retrieve('userName')!=null;
   }
   
 }
