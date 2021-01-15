@@ -8,8 +8,13 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            
+        <tr *ngFor="let employee of employees">
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.emailId}}</td>
+
+
+
         </tr>
     </tbody>
 </table> 
