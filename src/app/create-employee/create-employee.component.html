@@ -1,23 +1,69 @@
 <div class = "col-md-6 offset-md-3">
 <h3>Create Employee</h3>
 
-<form (ngSubmit) = "onSubmit()"> 
+  <form (ngSubmit) = "onSubmit()"> 
     <div class="form-group">
-        <label>First Name</label>
-        <input type="text" class="form-control" id="firstName"
-            [(ngModel)] = "employee.firstName" name ="firstName">
+        <label>ID</label>
+        <input type="text" class="form-control" id="idNumber"
+            [(ngModel)] = "employee.idNumber" name ="idNumber">
     </div>
 
     <div class="form-group">
-        <label>Last Name</label>
-        <input type="text" class="form-control" id="lastName"
-            [(ngModel)] = "employee.lastName" name ="lastName">
+        <label>ID Type</label>
+        <input type="text" class="form-control" id="idType"
+            [(ngModel)] = "employee.idType" name ="idType">
     </div>
 
     <div class="form-group">
-        <label>Email ID</label>
-        <input type="text" class="form-control" id="emailId"
-            [(ngModel)] = "employee.emailId" name ="emailId">
+        <label>Full Name</label>
+        <input type="text" class="form-control" id="fullName"
+            [(ngModel)] = "employee.fullName" name ="fullName">
+    </div>
+
+    <div class="form-group">
+        <label> Address</label>
+        <input type="text" class="form-control" id="address"
+            [(ngModel)] = "employee.address" name ="address">
+    </div>
+    <div class="form-group">
+        <label> Telephone Number</label>
+        <input type="text" class="form-control" id="telephoneNo"
+            [(ngModel)] = "employee.telephoneNo" name ="telephoneNo">
+    </div>
+    <div class="form-group">
+        <label> Email</label>
+        <input type="text" class="form-control" id="email"
+            [(ngModel)] = "employee.email" name ="email">
+    </div>
+    <div class="form-group">
+        <label> Gender</label>
+        <input type="text" class="form-control" id="gender"
+            [(ngModel)] = "employee.gender" name ="gender">
+    </div>
+    <div class="form-group">
+        <label> birthDay</label>
+        <input type="date" class="form-control" id="birthDay" placeholder="yyyy-mm-dd"
+            [(ngModel)] = "employee.birthDay" name ="birthDay">
+    </div>
+    <div class="form-group">
+        <label> Position</label>
+        <input type="text" class="form-control" id="position"
+            [(ngModel)] = "employee.position" name ="position">
+    </div>
+    <div class="form-group">
+        <label> Salary(Rs)</label>
+        <input type="text" class="form-control" id="salary"
+            [(ngModel)] = "employee.salary" name ="salary">
+    </div>
+    <div class="form-group">
+        <label> Start Date</label>
+        <input type="date" class="form-control" id="startDate" placeholder="yyyy-mm-dd"
+            [(ngModel)] = "employee.startDate" name ="startDate">
+    </div>
+    <div class="form-group">
+        <label> Status</label>
+        <input type="text" class="form-control" id="status"
+            [(ngModel)] = "employee.status" name ="status">
     </div>
 
     <button class = "btn btn-success" type="submit">Submit</button>
