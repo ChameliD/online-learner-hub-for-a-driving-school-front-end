@@ -1,0 +1,22 @@
+<h2>Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Plate Number</th>
+            <th>Vehicle Class</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td>{{vehicle.plateNo}}</td>
+            <td>{{vehicle.vehicaleClass}}</td>
+            <td>
+                <button (click) = "updateVehicle(vehicle.id)" class="btn btn-info">Update</button>
+                <button (click) = "deleteVehicle(vehicle.id)" class="btn btn-danger">Delete</button>          
+                <button (click) = "vehicleDetails(vehicle.id)" class="btn btn-info">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table> 
+

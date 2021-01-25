@@ -1,0 +1,23 @@
+<h2>Applicant List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Telephone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let applicant of applicants">
+            <td>{{applicant.fullName}}</td>
+            <td>{{applicant.telephoneNo}}</td>
+            <td>{{applicant.address}}</td>
+            <td>
+
+                <button (click) ="updateApplicant(applicant.id)" class="btn btn-info">Update</button>
+                <button (click) = "deleteApplicant(applicant.id)" class="btn btn-danger">Delete</button>          
+                <button (click) = "applicantDetails(applicant.id)" class="btn btn-info">View</button>
+            </td>
+        </tr>
+    </tbody>
+</table> 
