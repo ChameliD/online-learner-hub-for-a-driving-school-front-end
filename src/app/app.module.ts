@@ -16,6 +16,10 @@ import { AddPostComponent } from './add-post/add-post.component';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { HttpClientInterceptor } from './http-client-interceptor';
 import { PostComponent } from './post/post.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 
 
 
@@ -28,7 +32,11 @@ import { PostComponent } from './post/post.component';
     RegisterSuccessComponent,
     HomeComponent,
     AddPostComponent,
-    PostComponent
+    PostComponent,
+    EmployeeListComponent,
+    EmployeeDetailsComponent,
+    CreateEmployeeComponent,
+    UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +51,14 @@ import { PostComponent } from './post/post.component';
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'add-post', component: AddPostComponent}
+      {path: 'add-post', component: AddPostComponent},
+      {path: 'employees',component:EmployeeListComponent},
+      {path: 'create-employee',component:CreateEmployeeComponent},
+      {path: '',redirectTo:'employees',pathMatch:'full'},
+      {path: 'update-employee/:id',component:UpdateEmployeeComponent},
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent}
+    
+
     ]),
     HttpClientModule,
     EditorModule
