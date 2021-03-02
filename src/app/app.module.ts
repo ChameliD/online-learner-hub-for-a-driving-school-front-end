@@ -23,6 +23,7 @@ import { RegisterSuccessComponent } from './auth/register-success/register-succe
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Ng2Webstorage } from 'ngx-webstorage';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -59,6 +60,8 @@ import { Ng2Webstorage } from 'ngx-webstorage';
       {path: 'register', component: RegisterComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'login', component: LoginComponent},
+      {path: 'home', component: HomeComponent},
+
      
     ]),
     HttpClientModule,
