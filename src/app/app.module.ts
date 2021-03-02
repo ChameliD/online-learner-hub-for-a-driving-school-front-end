@@ -15,7 +15,16 @@ import { UpdateApplicantComponent } from './update-applicant/update-applicant.co
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
-import { UpdateVehicleComponent } from './update-vehicle/update-vehicle.component'
+import { UpdateVehicleComponent } from './update-vehicle/update-vehicle.component';
+import { HeaderComponent } from './header/header.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { Ng2Webstorage } from 'ngx-webstorage';
+
+
 
 @NgModule({
   declarations: [
@@ -31,13 +40,28 @@ import { UpdateVehicleComponent } from './update-vehicle/update-vehicle.componen
     CreateVehicleComponent,
     VehicleDetailsComponent,
     VehicleListComponent,
-    UpdateVehicleComponent
+    UpdateVehicleComponent,
+    HeaderComponent,
+    RegisterComponent,
+    LoginComponent,
+    RegisterSuccessComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    Ng2Webstorage.forRoot(),
+    RouterModule.forRoot([
+      {path: '', component: RegisterComponent},
+      {path: 'register', component: RegisterComponent},
+      {path: 'register-success', component: RegisterSuccessComponent},
+      {path: 'login', component: LoginComponent},
+     
+    ]),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
