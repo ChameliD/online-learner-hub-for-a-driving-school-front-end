@@ -24,6 +24,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 
 
@@ -45,7 +46,8 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     RegisterComponent,
     LoginComponent,
-    RegisterSuccessComponent
+    RegisterSuccessComponent,
+    AddPostComponent
     
   ],
   imports: [
