@@ -22,6 +22,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { Ng2Webstorage } from 'ngx-webstorage';
+
 
 
 @NgModule({
@@ -51,10 +53,13 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    Ng2Webstorage.forRoot(),
     RouterModule.forRoot([
       {path: '', component: RegisterComponent},
       {path: 'register', component: RegisterComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
+      {path: 'login', component: LoginComponent},
+     
     ]),
     HttpClientModule,
   ],
