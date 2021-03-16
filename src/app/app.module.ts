@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule,HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component'; 
@@ -25,6 +25,12 @@ import { RouterModule } from '@angular/router';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
+import { HttpClientInterceptor } from './http-client-interceptor';
+//import { PostComponent } from './post/post.component';
+import { TestComponent } from './test/test.component';
+import { CommonModule } from '@angular/common';
+
+//import {EditorModule} from '@tinymce/tinymce-angular';
 
 
 
@@ -47,7 +53,9 @@ import { AddPostComponent } from './add-post/add-post.component';
     RegisterComponent,
     LoginComponent,
     RegisterSuccessComponent,
-    AddPostComponent
+    AddPostComponent,
+   // PostComponent,
+    TestComponent
     
   ],
   imports: [
@@ -60,15 +68,26 @@ import { AddPostComponent } from './add-post/add-post.component';
     RouterModule.forRoot([
       {path: '', component: RegisterComponent},
       {path: 'register', component: RegisterComponent},
-      {path: 'register-success', component: RegisterSuccessComponent},
+     // {path: 'post/:id', component: PostComponent},
       {path: 'login', component: LoginComponent},
+      {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
+      {path: 'add-post', component: AddPostComponent},
+      {path: 'employees',component:EmployeeListComponent},
+      {path: 'create-employee',component:CreateEmployeeComponent},
+      {path: '',redirectTo:'employees',pathMatch:'full'},
+      {path: 'update-employee/:id',component:UpdateEmployeeComponent},
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent},
+      {path:'test',component:TestComponent}
 
      
     ]),
     HttpClientModule,
+    CommonModule
+    
+
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpClientInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
