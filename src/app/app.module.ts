@@ -26,8 +26,8 @@ import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { HttpClientInterceptor } from './http-client-interceptor';
-//import { PostComponent } from './post/post.component';
-import { TestComponent } from './test/test.component';
+import { PostComponent } from './post/post.component';
+//import { TestComponent } from './test/test.component';
 import { CommonModule } from '@angular/common';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
@@ -54,8 +54,8 @@ import { CommonModule } from '@angular/common';
     LoginComponent,
     RegisterSuccessComponent,
     AddPostComponent,
-   // PostComponent,
-    TestComponent
+   PostComponent,
+    
     
   ],
   imports: [
@@ -78,8 +78,7 @@ import { CommonModule } from '@angular/common';
       {path: '',redirectTo:'employees',pathMatch:'full'},
       {path: 'update-employee/:id',component:UpdateEmployeeComponent},
       {path: 'employee-details/:id',component:EmployeeDetailsComponent},
-      {path:'test',component:TestComponent}
-
+      
      
     ]),
     HttpClientModule,
