@@ -8,7 +8,7 @@ import { AuthService } from '../auth/auth.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  title = 'Sampath Driving School';
   constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
