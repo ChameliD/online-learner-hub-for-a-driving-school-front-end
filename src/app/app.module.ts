@@ -29,6 +29,7 @@ import { HttpClientInterceptor } from './http-client-interceptor';
 import { PostComponent } from './post/post.component';
 //import { TestComponent } from './test/test.component';
 import { CommonModule } from '@angular/common';
+import { QuizComponent } from './quiz/quiz.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -55,6 +56,7 @@ import { CommonModule } from '@angular/common';
     RegisterSuccessComponent,
     AddPostComponent,
    PostComponent,
+   QuizComponent,
     
     
   ],
@@ -73,11 +75,14 @@ import { CommonModule } from '@angular/common';
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
       {path: 'add-post', component: AddPostComponent},
-      {path: 'employees',component:EmployeeListComponent},
+     
+     /* {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent},
       {path: '',redirectTo:'employees',pathMatch:'full'},
       {path: 'update-employee/:id',component:UpdateEmployeeComponent},
-      {path: 'employee-details/:id',component:EmployeeDetailsComponent},
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent},*/
+
+      {path:'quiz',component:QuizComponent}
       
      
     ]),
