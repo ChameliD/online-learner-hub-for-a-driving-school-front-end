@@ -30,6 +30,7 @@ import { PostComponent } from './post/post.component';
 //import { TestComponent } from './test/test.component';
 import { CommonModule } from '@angular/common';
 import { QuizComponent } from './quiz/quiz.component';
+import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinments.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -57,6 +58,8 @@ import { QuizComponent } from './quiz/quiz.component';
     AddPostComponent,
    PostComponent,
    QuizComponent,
+   CreateAppoinmentsComponent,
+  
     
     
   ],
