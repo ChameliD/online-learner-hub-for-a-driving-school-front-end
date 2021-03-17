@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ApplicantDetailsComponent } from './applicant-details/applicant-details.component';
 import { ApplicantListComponent } from './applicant-list/applicant-list.component';
+import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
+import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
 import { CreateApplicantComponent } from './create-applicant/create-applicant.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
@@ -30,7 +32,13 @@ const routes: Routes = [
   {path: 'create-vehicle',component:CreateVehicleComponent},
   {path: '',redirectTo:'vehicles',pathMatch:'full'},
   {path: 'update-vehicle/:id',component:UpdateVehicleComponent},
-  {path: 'vehicle-details/:id',component:VehicleDetailsComponent}
+  {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
+
+  {path: 'appoinments',component:AppoinmentsListComponent},
+  {path: 'create-appoinments',component:CreateApplicantComponent},
+  {path: '',redirectTo:'appoinments',pathMatch:'full'},
+  {path: 'update-appoinments/:id',component:UpdateApplicantComponent},
+  {path: 'vehicle-appoinments/:id',component:AppoinmentsDetailsComponent}
 
 ];
 

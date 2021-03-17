@@ -31,6 +31,9 @@ import { PostComponent } from './post/post.component';
 import { CommonModule } from '@angular/common';
 import { QuizComponent } from './quiz/quiz.component';
 import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinments.component';
+import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
+import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
+import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -59,6 +62,9 @@ import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinme
    PostComponent,
    QuizComponent,
    CreateAppoinmentsComponent,
+   AppoinmentsListComponent,
+   UpdateAppoinmentsComponent,
+   AppoinmentsDetailsComponent,
   
     
     
