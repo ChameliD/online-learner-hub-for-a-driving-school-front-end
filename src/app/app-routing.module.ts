@@ -5,11 +5,13 @@ import { ApplicantListComponent } from './applicant-list/applicant-list.componen
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
 import { CreateApplicantComponent } from './create-applicant/create-applicant.component';
+import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinments.component';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { UpdateApplicantComponent } from './update-applicant/update-applicant.component';
+import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { UpdateVehicleComponent } from './update-vehicle/update-vehicle.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
@@ -35,9 +37,9 @@ const routes: Routes = [
   {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
 
   {path: 'appoinments',component:AppoinmentsListComponent},
-  {path: 'create-appoinments',component:CreateApplicantComponent},
+  {path: 'create-appoinments',component:CreateAppoinmentsComponent},
   {path: '',redirectTo:'appoinments',pathMatch:'full'},
-  {path: 'update-appoinments/:id',component:UpdateApplicantComponent},
+  {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
   {path: 'vehicle-appoinments/:id',component:AppoinmentsDetailsComponent}
 
 ];
