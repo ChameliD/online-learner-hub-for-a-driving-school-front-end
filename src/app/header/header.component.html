@@ -7,7 +7,7 @@
       
      
       <div class="col-md-3" *ngIf="authService.isAuthenticated()">
-        <button class="logout btn btn-default" (click)="logout()">Logout</button>
+        
         
         <nav class = "navbar navbar-expand-sm bg-primary navbar-dark">
           <ul class="navbar-nav">
@@ -36,8 +36,11 @@
               <a routerLink ="/quiz" routerLinkActive="active" class="nav-link">Take quiz</a>
             </li>
             <li class="nav-item">
-              <a routerLink ="/add-post" routerLinkActive="active" class="nav-link">Add Post</a>
+              <a routerLink ="create-appoinments" routerLinkActive="active" class="nav-link">Add appoinments</a>
             </li>
+            <li class="nav-item">
+            <button class="logout btn btn-default" (click)="logout()">Logout</button>
+          </li>
           </ul>
         </nav>
         

@@ -24,12 +24,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
-import { AddPostComponent } from './add-post/add-post.component';
+//import { AddPostComponent } from './add-post/add-post.component';
 import { HttpClientInterceptor } from './http-client-interceptor';
-import { PostComponent } from './post/post.component';
+//import { PostComponent } from './post/post.component';
 //import { TestComponent } from './test/test.component';
 import { CommonModule } from '@angular/common';
 import { QuizComponent } from './quiz/quiz.component';
+import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinments.component';
+import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
+import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
+import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -54,9 +58,13 @@ import { QuizComponent } from './quiz/quiz.component';
     RegisterComponent,
     LoginComponent,
     RegisterSuccessComponent,
-    AddPostComponent,
-   PostComponent,
-   QuizComponent,
+    QuizComponent,
+    CreateAppoinmentsComponent,
+    AppoinmentsListComponent,
+    UpdateAppoinmentsComponent,
+    AppoinmentsDetailsComponent,
+   
+    
     
     
   ],
@@ -74,13 +82,33 @@ import { QuizComponent } from './quiz/quiz.component';
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'add-post', component: AddPostComponent},
+     // {path: 'add-post', component: AddPostComponent},
      
-     /* {path: 'employees',component:EmployeeListComponent},
+     {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent},
       {path: '',redirectTo:'employees',pathMatch:'full'},
       {path: 'update-employee/:id',component:UpdateEmployeeComponent},
-      {path: 'employee-details/:id',component:EmployeeDetailsComponent},*/
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent},
+
+      {path: 'applicants',component:ApplicantListComponent},
+      {path: 'create-applicant',component:CreateApplicantComponent},
+      {path: '',redirectTo:'applicants',pathMatch:'full'},
+      {path: 'update-applicant/:id',component:UpdateApplicantComponent},
+      {path: 'applicant-details/:id',component:ApplicantDetailsComponent},
+      
+      {path: 'vehicles',component:VehicleListComponent},
+      {path: 'create-vehicle',component:CreateVehicleComponent},
+      {path: '',redirectTo:'vehicles',pathMatch:'full'},
+      {path: 'update-vehicle/:id',component:UpdateVehicleComponent},
+      {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
+
+      {path: 'appoinments',component:AppoinmentsListComponent},
+      {path: 'create-appoinments',component:CreateAppoinmentsComponent},
+      {path: '',redirectTo:'appoinments',pathMatch:'full'},
+      {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
+      {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent},
+
+      
 
       {path:'quiz',component:QuizComponent}
       
