@@ -34,6 +34,7 @@ import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinme
 import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
 import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
+import { AuthGuard } from './auth.guard';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -85,32 +86,32 @@ import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-d
      // {path: 'add-post', component: AddPostComponent},
      
      {path: 'employees',component:EmployeeListComponent},
-      {path: 'create-employee',component:CreateEmployeeComponent},
+      {path: 'create-employee',component:CreateEmployeeComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'employees',pathMatch:'full'},
-      {path: 'update-employee/:id',component:UpdateEmployeeComponent},
-      {path: 'employee-details/:id',component:EmployeeDetailsComponent},
+      {path: 'update-employee/:id',component:UpdateEmployeeComponent,canActivate:[AuthGuard]},
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent,canActivate:[AuthGuard]},
 
-      {path: 'applicants',component:ApplicantListComponent},
-      {path: 'create-applicant',component:CreateApplicantComponent},
+      {path: 'applicants',component:ApplicantListComponent,canActivate:[AuthGuard]},
+      {path: 'create-applicant',component:CreateApplicantComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'applicants',pathMatch:'full'},
-      {path: 'update-applicant/:id',component:UpdateApplicantComponent},
-      {path: 'applicant-details/:id',component:ApplicantDetailsComponent},
+      {path: 'update-applicant/:id',component:UpdateApplicantComponent,canActivate:[AuthGuard]},
+      {path: 'applicant-details/:id',component:ApplicantDetailsComponent,canActivate:[AuthGuard]},
       
-      {path: 'vehicles',component:VehicleListComponent},
-      {path: 'create-vehicle',component:CreateVehicleComponent},
+      {path: 'vehicles',component:VehicleListComponent,canActivate:[AuthGuard]},
+      {path: 'create-vehicle',component:CreateVehicleComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'vehicles',pathMatch:'full'},
-      {path: 'update-vehicle/:id',component:UpdateVehicleComponent},
-      {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
+      {path: 'update-vehicle/:id',component:UpdateVehicleComponent,canActivate:[AuthGuard]},
+      {path: 'vehicle-details/:id',component:VehicleDetailsComponent,canActivate:[AuthGuard]},
 
-      {path: 'appoinments',component:AppoinmentsListComponent},
-      {path: 'create-appoinments',component:CreateAppoinmentsComponent},
+      {path: 'appoinments',component:AppoinmentsListComponent,canActivate:[AuthGuard]},
+      {path: 'create-appoinments',component:CreateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'appoinments',pathMatch:'full'},
-      {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
-      {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent},
+      {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent,canActivate:[AuthGuard]},
+      {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent,canActivate:[AuthGuard]},
 
       
 
-      {path:'quiz',component:QuizComponent}
+      {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]}
       
      
     ]),
