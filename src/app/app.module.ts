@@ -34,6 +34,7 @@ import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinme
 import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
 import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -65,6 +66,7 @@ import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-d
    AppoinmentsListComponent,
    UpdateAppoinmentsComponent,
    AppoinmentsDetailsComponent,
+   PostListComponent,
   
     
     
@@ -85,11 +87,29 @@ import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-d
       {path: 'home', component: HomeComponent},
       {path: 'add-post', component: AddPostComponent},
      
-     /* {path: 'employees',component:EmployeeListComponent},
+     {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent},
       {path: '',redirectTo:'employees',pathMatch:'full'},
       {path: 'update-employee/:id',component:UpdateEmployeeComponent},
-      {path: 'employee-details/:id',component:EmployeeDetailsComponent},*/
+      {path: 'employee-details/:id',component:EmployeeDetailsComponent},
+
+      {path: 'applicants',component:ApplicantListComponent},
+      {path: 'create-applicant',component:CreateApplicantComponent},
+      {path: '',redirectTo:'applicants',pathMatch:'full'},
+      {path: 'update-applicant/:id',component:UpdateApplicantComponent},
+      {path: 'applicant-details/:id',component:ApplicantDetailsComponent},
+      
+      {path: 'vehicles',component:VehicleListComponent},
+      {path: 'create-vehicle',component:CreateVehicleComponent},
+      {path: '',redirectTo:'vehicles',pathMatch:'full'},
+      {path: 'update-vehicle/:id',component:UpdateVehicleComponent},
+      {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
+
+      {path: 'appoinments',component:AppoinmentsListComponent},
+      {path: 'create-appoinments',component:CreateAppoinmentsComponent},
+      {path: '',redirectTo:'appoinments',pathMatch:'full'},
+      {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
+      {path: 'vehicle-appoinments/:id',component:AppoinmentsDetailsComponent},
 
       {path:'quiz',component:QuizComponent}
       

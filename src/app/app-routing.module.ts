@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ApplicantDetailsComponent } from './applicant-details/applicant-details.component';
+/*import { ApplicantDetailsComponent } from './applicant-details/applicant-details.component';
 import { ApplicantListComponent } from './applicant-list/applicant-list.component';
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
@@ -15,33 +15,11 @@ import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinme
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
 import { UpdateVehicleComponent } from './update-vehicle/update-vehicle.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
-import { VehicleListComponent } from './vehicle-list/vehicle-list.component';
+import { VehicleListComponent } from './vehicle-list/vehicle-list.component';*/
 
 const routes: Routes = [
-  {path: 'employees',component:EmployeeListComponent},
-  {path: 'create-employee',component:CreateEmployeeComponent},
-  {path: '',redirectTo:'employees',pathMatch:'full'},
-  {path: 'update-employee/:id',component:UpdateEmployeeComponent},
-  {path: 'employee-details/:id',component:EmployeeDetailsComponent},
-
-  {path: 'applicants',component:ApplicantListComponent},
-  {path: 'create-applicant',component:CreateApplicantComponent},
-  {path: '',redirectTo:'applicants',pathMatch:'full'},
-  {path: 'update-applicant/:id',component:UpdateApplicantComponent},
-  {path: 'applicant-details/:id',component:ApplicantDetailsComponent},
   
-  {path: 'vehicles',component:VehicleListComponent},
-  {path: 'create-vehicle',component:CreateVehicleComponent},
-  {path: '',redirectTo:'vehicles',pathMatch:'full'},
-  {path: 'update-vehicle/:id',component:UpdateVehicleComponent},
-  {path: 'vehicle-details/:id',component:VehicleDetailsComponent},
-
-  {path: 'appoinments',component:AppoinmentsListComponent},
-  {path: 'create-appoinments',component:CreateAppoinmentsComponent},
-  {path: '',redirectTo:'appoinments',pathMatch:'full'},
-  {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
-  {path: 'vehicle-appoinments/:id',component:AppoinmentsDetailsComponent}
-
+  
 ];
 
 @NgModule({
