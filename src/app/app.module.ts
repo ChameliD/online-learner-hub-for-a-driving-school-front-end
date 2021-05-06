@@ -24,9 +24,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
-import { AddPostComponent } from './add-post/add-post.component';
+//import { AddPostComponent } from './add-post/add-post.component';
 import { HttpClientInterceptor } from './http-client-interceptor';
-import { PostComponent } from './post/post.component';
+//import { PostComponent } from './post/post.component';
 //import { TestComponent } from './test/test.component';
 import { CommonModule } from '@angular/common';
 import { QuizComponent } from './quiz/quiz.component';
@@ -34,7 +34,6 @@ import { CreateAppoinmentsComponent } from './create-appoinments/create-appoinme
 import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.component';
 import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
-import { PostListComponent } from './post-list/post-list.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -59,15 +58,13 @@ import { PostListComponent } from './post-list/post-list.component';
     RegisterComponent,
     LoginComponent,
     RegisterSuccessComponent,
-    AddPostComponent,
-   PostComponent,
-   QuizComponent,
-   CreateAppoinmentsComponent,
-   AppoinmentsListComponent,
-   UpdateAppoinmentsComponent,
-   AppoinmentsDetailsComponent,
-   PostListComponent,
-  
+    QuizComponent,
+    CreateAppoinmentsComponent,
+    AppoinmentsListComponent,
+    UpdateAppoinmentsComponent,
+    AppoinmentsDetailsComponent,
+   
+    
     
     
   ],
@@ -85,7 +82,7 @@ import { PostListComponent } from './post-list/post-list.component';
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
-      {path: 'add-post', component: AddPostComponent},
+     // {path: 'add-post', component: AddPostComponent},
      
      {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent},
@@ -109,7 +106,9 @@ import { PostListComponent } from './post-list/post-list.component';
       {path: 'create-appoinments',component:CreateAppoinmentsComponent},
       {path: '',redirectTo:'appoinments',pathMatch:'full'},
       {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent},
-      {path: 'vehicle-appoinments/:id',component:AppoinmentsDetailsComponent},
+      {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent},
+
+      
 
       {path:'quiz',component:QuizComponent}
       
