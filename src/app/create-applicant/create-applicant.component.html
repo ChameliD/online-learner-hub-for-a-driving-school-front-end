@@ -3,15 +3,17 @@
     
   <form (ngSubmit) = "onSubmit()"> 
     <div class="form-group">
-        <label>ID</label>
+        <label>ID Number</label>
         <input type="text" class="form-control" id="idNumber"
             [(ngModel)] = "applicant.idNumber" name ="idNumber">
     </div>
 
     <div class="form-group">
-        <label>ID Type</label>
-        <input type="text" class="form-control" id="idType"
-            [(ngModel)] = "applicant.idType" name ="idType">
+        <label>ID Type</label><br>
+        <input type="radio" id="idType" value="nic"
+            [(ngModel)] = "applicant.idType" name ="idType"class="radio">NIC<br>
+        <input type="radio"  id="idType" value="passport"
+            [(ngModel)] = "applicant.idType" name ="idType"class="radio">Passport<br>
     </div>
 
     <div class="form-group">
@@ -31,15 +33,27 @@
             [(ngModel)] = "applicant.telephoneNo" name ="telephoneNo">
     </div>
         <div class="form-group">
-        <label> Gender</label>
-        <input type="text" class="form-control" id="gender"
-            [(ngModel)] = "applicant.gender" name ="gender">
+        <label> Gender</label><br>
+        <input type="radio" id="gender" value="male"
+            [(ngModel)] = "applicant.gender" name ="gender"class="radio">Male<br>
+        <input type="radio" id="gender" value="female"
+            [(ngModel)] = "applicant.gender" name ="gender"class="radio">Female<br>    
     </div>
-
     <div class="form-group">
-        <label> Licence Type</label>
-        <input type="text" class="form-control" id="licenceType"
-            [(ngModel)] = "applicant.licenceType" name ="licenceType">
+        <label> Birth Day</label>
+        <input type="date" class="form-control" id="birthDay" placeholder="yyyy-mm-dd"
+            [(ngModel)] = "applicant.birthDay" name ="birthDay">
+    </div>
+    <div class="form-group">
+        <label> Licence Type</label><br>
+        <input type="radio" id="licenceType"value="new"
+            [(ngModel)] = "applicant.licenceType" name ="licenceType"class="radio">New<br>
+        <input type="radio" id="licenceType" value="extension"
+            [(ngModel)] = "applicant.licenceType" name ="licenceType"class="radio">Extension<br>
+        <input type="radio" id="licenceType"value="renewal"
+            [(ngModel)] = "applicant.licenceType" name ="licenceType"class="radio">Renewal<br>
+        <input type="radio" id="licenceType" value="duplicate"
+            [(ngModel)] = "applicant.licenceType" name ="licenceType"class="radio">Duplicate<br>    
     </div>
 
 

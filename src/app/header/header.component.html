@@ -1,9 +1,10 @@
 <div class="header">
   <div class="container">
+    <div>
+      <h1><a href="" class="title">{{title}}</a></h1>
+    </div> <!-- Title -->
+    
     <div class="row">
-      <div>
-        <h1><a href="" class="title">{{title}}</a></h1>
-      </div> <!-- Title -->
       
      
       <div class="col-md-3" *ngIf="authService.isAuthenticated()">
@@ -12,6 +13,9 @@
         <nav class = "navbar navbar-expand-sm bg-primary navbar-dark">
           <ul class="navbar-nav">
         
+            <li class="nav-item">
+              <a routerLink ="home" routerLinkActive="active" class="nav-link">Home</a>
+            </li>
             <li class="nav-item">
               <a routerLink ="employees" routerLinkActive="active" class="nav-link">Employee List</a>
             </li>
