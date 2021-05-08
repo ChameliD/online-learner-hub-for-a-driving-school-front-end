@@ -5,3 +5,33 @@
     color:rgb(110, 5, 27);
     text-decoration: none;
 }
+img {
+    
+}
+.right {
+    float: right;  
+  }
+  
+span.a {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 10px solid rgb(181, 171, 226);    
+    background-color: rgb(243, 233, 138); 
+  }
+span.b {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 10px solid rgb(181, 171, 226);    
+    background-color: rgb(245, 125, 191); 
+  }
+
+h2{
+    font-size: 150%;
+    text-align: center;
+    color: rgb(37, 17, 26);
+}
+  
