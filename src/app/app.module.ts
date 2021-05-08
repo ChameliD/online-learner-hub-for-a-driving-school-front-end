@@ -36,6 +36,8 @@ import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinme
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 import { AuthGuard } from './auth.guard';
 import { OurServiceComponent } from './our-service/our-service.component';
+import { FaqsComponent } from './faqs/faqs.component';
+import { QAFormComponent } from './q-a-form/q-a-form.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -66,6 +68,8 @@ import { OurServiceComponent } from './our-service/our-service.component';
     UpdateAppoinmentsComponent,
     AppoinmentsDetailsComponent,
     OurServiceComponent,
+    FaqsComponent,
+    QAFormComponent,
    
     
     
@@ -88,6 +92,7 @@ import { OurServiceComponent } from './our-service/our-service.component';
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
       {path: 'our-service', component: OurServiceComponent},
+      {path: 'faqs', component: FaqsComponent},
      
      {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent,canActivate:[AuthGuard]},

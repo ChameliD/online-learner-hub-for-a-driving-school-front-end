@@ -1,5 +1,5 @@
 <div class = "col-md-6 offset-md-3">
-<h3>Create Applicant</h3>
+<p class="p1">Create Applicant</p>
     
   <form (ngSubmit) = "onSubmit()"> 
     <div class="form-group">
@@ -9,7 +9,7 @@
     </div>
 
     <div class="form-group">
-        <label>ID Type</label><br>
+        <label>ID Type </label><br>
         <input type="radio" id="idType" value="nic"
             [(ngModel)] = "applicant.idType" name ="idType"class="radio">NIC<br>
         <input type="radio"  id="idType" value="passport"
