@@ -87,7 +87,7 @@ import { OurServiceComponent } from './our-service/our-service.component';
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
       {path: 'home', component: HomeComponent},
-     // {path: 'add-post', component: AddPostComponent},
+      {path: 'our-service', component: OurServiceComponent},
      
      {path: 'employees',component:EmployeeListComponent},
       {path: 'create-employee',component:CreateEmployeeComponent,canActivate:[AuthGuard]},
