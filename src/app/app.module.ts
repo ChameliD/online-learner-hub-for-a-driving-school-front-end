@@ -35,6 +35,7 @@ import { AppoinmentsListComponent } from './appoinments-list/appoinments-list.co
 import { UpdateAppoinmentsComponent } from './update-appoinments/update-appoinments.component';
 import { AppoinmentsDetailsComponent } from './appoinments-details/appoinments-details.component';
 import { AuthGuard } from './auth.guard';
+import { OurServiceComponent } from './our-service/our-service.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -64,6 +65,7 @@ import { AuthGuard } from './auth.guard';
     AppoinmentsListComponent,
     UpdateAppoinmentsComponent,
     AppoinmentsDetailsComponent,
+    OurServiceComponent,
    
     
     
