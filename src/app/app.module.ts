@@ -129,7 +129,7 @@ import { QAFormComponent } from './q-a-form/q-a-form.component';
     
 
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpClientInterceptor, multi: true}],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpClientInterceptor, multi: true},AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
