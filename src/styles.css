@@ -23,7 +23,7 @@
 body{
     margin: 0;
     font-size: 15px;
-    background-color: rgb(181, 171, 226);
+    /*background-color: rgb(167, 185, 199);*/
 }
 *{
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body{
 
 .custom-box{
     max-width: 700px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(151, 192, 235);
     margin: 40px auto;
     padding: 30px;
 
