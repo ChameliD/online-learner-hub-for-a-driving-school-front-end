@@ -12,13 +12,13 @@
 .login, .register{
     float: right;
     text-decoration: none;
-    color:yellowgreen;
+    color:white;
     padding-top: 10px;
     background-color: teal;
 }
 .logout, .new-post{
     float: right;
-    color: yellowgreen;
+    color: white;
     background-color: teal;
     padding-top: 10px;
     text-align: left;
