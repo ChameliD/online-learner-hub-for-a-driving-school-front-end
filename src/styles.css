@@ -23,7 +23,9 @@
 body{
     margin: 0;
     font-size: 15px;
-    /*background-color: rgb(167, 185, 199);*/
+    /*background-image:url("/assets/images/back1.jpg")  ;
+    
+    background-color: rgb(167, 185, 199);*/
 }
 *{
     box-sizing: border-box;

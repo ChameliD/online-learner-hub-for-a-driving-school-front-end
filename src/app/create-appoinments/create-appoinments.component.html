@@ -11,11 +11,10 @@
     
         <div class="form-group">
             <label>Appoinment Time</label>
-            <input type="time" class="form-control" id="appoinmentTime" placeholder="hh:mm:ss"
+            <input matInput class="timepicker" placeholder="HH:mm:ss" 
                 [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime">
         </div>
     
-        
         <button class = "btn btn-success" type="submit">Submit</button>
     
     </form>

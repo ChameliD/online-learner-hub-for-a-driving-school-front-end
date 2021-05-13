@@ -38,6 +38,8 @@ import { AuthGuard } from './auth.guard';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { QAFormComponent } from './q-a-form/q-a-form.component';
+import { AppoinmentHomeComponent } from './appoinment-home/appoinment-home.component';
+import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-classes.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -70,6 +72,8 @@ import { QAFormComponent } from './q-a-form/q-a-form.component';
     OurServiceComponent,
     FaqsComponent,
     QAFormComponent,
+    AppoinmentHomeComponent,
+    AppoinmentClassesComponent,
    
     
     
