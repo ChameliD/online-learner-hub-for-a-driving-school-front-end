@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 * {
     margin: 0;
-    padding: 0;
+    
    }
 
    .p1{
@@ -23,6 +23,7 @@
 body{
     margin: 0;
     font-size: 15px;
+    
     /*background-image:url("/assets/images/back1.jpg")  ;
     
     background-color: rgb(167, 185, 199);*/
