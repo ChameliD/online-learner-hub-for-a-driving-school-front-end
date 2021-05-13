@@ -40,6 +40,7 @@ import { FaqsComponent } from './faqs/faqs.component';
 import { QAFormComponent } from './q-a-form/q-a-form.component';
 import { AppoinmentHomeComponent } from './appoinment-home/appoinment-home.component';
 import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-classes.component';
+import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driving.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -74,6 +75,7 @@ import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-clas
     QAFormComponent,
     AppoinmentHomeComponent,
     AppoinmentClassesComponent,
+    AppoinmentDrivingComponent,
    
     
     
@@ -122,7 +124,8 @@ import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-clas
       {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent,canActivate:[AuthGuard]},
 
-      
+      {path: 'appoinment-home',component:AppoinmentHomeComponent,canActivate:[AuthGuard]},
+
 
       {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]}
       
