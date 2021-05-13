@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 * {
     margin: 0;
-    
+    padding: 0;
    }
 
    .p1{
@@ -10,6 +10,11 @@
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(110, 5, 27);
     text-decoration: none;
+}
+.btn-success{
+    background-color: darkcyan;
+    outline-color: darkcyan;
+    
 }
 .footer{
     position: relative;
@@ -23,7 +28,6 @@
 body{
     margin: 0;
     font-size: 15px;
-    
     /*background-image:url("/assets/images/back1.jpg")  ;
     
     background-color: rgb(167, 185, 199);*/
