@@ -41,6 +41,7 @@ import { QAFormComponent } from './q-a-form/q-a-form.component';
 import { AppoinmentHomeComponent } from './appoinment-home/appoinment-home.component';
 import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-classes.component';
 import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driving.component';
+import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment-class-list.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -76,6 +77,7 @@ import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driv
     AppoinmentHomeComponent,
     AppoinmentClassesComponent,
     AppoinmentDrivingComponent,
+    AppoinmentClassListComponent,
    
     
     
@@ -118,6 +120,11 @@ import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driv
       {path: 'update-vehicle/:id',component:UpdateVehicleComponent,canActivate:[AuthGuard]},
       {path: 'vehicle-details/:id',component:VehicleDetailsComponent,canActivate:[AuthGuard]},
 
+      {path: 'appoinmentClassList',component:AppoinmentClassListComponent,canActivate:[AuthGuard]},
+      {path: 'appoinment-classes',component:AppoinmentClassesComponent,canActivate:[AuthGuard]},
+      {path: '',redirectTo:'appoinmentClassList',pathMatch:'full'},
+      
+
       {path: 'appoinments',component:AppoinmentsListComponent,canActivate:[AuthGuard]},
       {path: 'create-appoinments',component:CreateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'appoinments',pathMatch:'full'},
@@ -125,7 +132,6 @@ import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driv
       {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent,canActivate:[AuthGuard]},
 
       {path: 'appoinment-home',component:AppoinmentHomeComponent,canActivate:[AuthGuard]},
-
 
       {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]}
       
