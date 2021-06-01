@@ -39,9 +39,9 @@ import { OurServiceComponent } from './our-service/our-service.component';
 import { FaqsComponent } from './faqs/faqs.component';
 import { QAFormComponent } from './q-a-form/q-a-form.component';
 import { AppoinmentHomeComponent } from './appoinment-home/appoinment-home.component';
-import { AppoinmentClassesComponent } from './appoinment-classes/appoinment-classes.component';
 import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driving.component';
 import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment-class-list.component';
+import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/create-appoinments-classes.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -75,9 +75,9 @@ import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment
     FaqsComponent,
     QAFormComponent,
     AppoinmentHomeComponent,
-    AppoinmentClassesComponent,
     AppoinmentDrivingComponent,
     AppoinmentClassListComponent,
+    CreateAppoinmentsClassesComponent,
    
     
     
@@ -120,14 +120,12 @@ import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment
       {path: 'update-vehicle/:id',component:UpdateVehicleComponent,canActivate:[AuthGuard]},
       {path: 'vehicle-details/:id',component:VehicleDetailsComponent,canActivate:[AuthGuard]},
 
-      {path: 'appoinmentClassList',component:AppoinmentClassListComponent,canActivate:[AuthGuard]},
-      {path: 'appoinment-classes',component:AppoinmentClassesComponent,canActivate:[AuthGuard]},
-      {path: '',redirectTo:'appoinmentClassList',pathMatch:'full'},
       
 
       {path: 'appoinments',component:AppoinmentsListComponent,canActivate:[AuthGuard]},
       {path: 'create-appoinments',component:CreateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'appoinments',pathMatch:'full'},
+      
       {path: 'update-appoinments/:id',component:UpdateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent,canActivate:[AuthGuard]},
 

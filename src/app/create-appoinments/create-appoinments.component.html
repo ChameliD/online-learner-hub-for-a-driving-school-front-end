@@ -9,12 +9,39 @@
                 [(ngModel)] = "appoinments.appoinmentDate" name ="appoinmentDate">
         </div>
     
-        <div class="form-group">
+        <!--div class="form-group">
             <label>Appoinment Time</label>
             <input matInput class="timepicker" placeholder="HH:mm:ss" 
                 [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime">
-        </div>
+        </div!-->
     
+        <div class="form-group">
+            <label> Appoinment Time</label>
+            <br>
+            <input type="radio" id="1" value="08:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">08.00 AM<br>
+            <input type="radio" id="2" value="09:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">09.00 AM<br>
+            <input type="radio" id="3" value="10:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">10.00 AM<br>
+            <input type="radio" id="4" value="11:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">11.00 AM<br>
+            <input type="radio" id="5" value="12:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">12.00 PM<br>
+            <input type="radio" id="6" value="13:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">01.00 PM<br>
+            <input type="radio" id="7" value="14:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">02.00 PM<br>
+            <input type="radio" id="8" value="15:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">03.00 PM<br>
+            <input type="radio" id="9" value="16:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">04.00 PM<br>
+            <input type="radio" id="10" value="17:00:00"
+                [(ngModel)] = "appoinments.appoinmentTime" name ="appoinmentTime"class="radio">05.00 PM<br>
+    
+            
+        </div>
+
         <button class = "btn btn-info" type="submit">Submit</button>
     
     </form>
