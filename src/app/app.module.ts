@@ -120,8 +120,10 @@ import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/
       {path: 'update-vehicle/:id',component:UpdateVehicleComponent,canActivate:[AuthGuard]},
       {path: 'vehicle-details/:id',component:VehicleDetailsComponent,canActivate:[AuthGuard]},
 
+      {path: 'appoinmentClass',component:AppoinmentClassListComponent,canActivate:[AuthGuard]},
+      {path:'create-appoinments-classes',component:CreateAppoinmentsClassesComponent,canActivate:[AuthGuard]},
+      {path: '',redirectTo:'appoinmentClass',pathMatch:'full'},
       
-
       {path: 'appoinments',component:AppoinmentsListComponent,canActivate:[AuthGuard]},
       {path: 'create-appoinments',component:CreateAppoinmentsComponent,canActivate:[AuthGuard]},
       {path: '',redirectTo:'appoinments',pathMatch:'full'},
