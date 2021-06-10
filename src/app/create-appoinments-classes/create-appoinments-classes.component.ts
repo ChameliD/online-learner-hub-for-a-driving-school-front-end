@@ -11,13 +11,30 @@ import { AppoinmentClssPayloadsService } from '../appoinment-clss-payloads.servi
 export class CreateAppoinmentsClassesComponent implements OnInit {
 
   appoinmentClass:AppoinmentClssPayloads = new AppoinmentClssPayloads
-  
+  allAppoinments:AppoinmentClssPayloads[];
+  date;
+
   constructor(private appoinmentClssPayloadsService:AppoinmentClssPayloadsService ,
     private router:Router){}
   
   ngOnInit(): void {
+    this.getAllApoinments();
+    
   }
-  
+
+  private getAllApoinments(){
+    
+      this.appoinmentClssPayloadsService.gtAppoinmentClssList().subscribe(data =>{
+        this.allAppoinments=data;
+        for(let app in this.allAppoinments){
+          console.log(data[app].appoinmentDate)
+        }
+        
+        
+      })
+    
+  }
+
   saveAppoinments(){
     this.appoinmentClssPayloadsService.createAppoinmentClss(this.appoinmentClass).subscribe(data =>{
       console.log(data);
@@ -32,8 +49,10 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
   }
 
   onSubmit(){
+    
     console.log(this.appoinmentClass);
     this.saveAppoinments();
+    
 
   }
 
