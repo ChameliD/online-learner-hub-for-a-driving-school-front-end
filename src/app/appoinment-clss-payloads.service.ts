@@ -12,7 +12,7 @@ export class AppoinmentClssPayloadsService {
   constructor(private httpClient : HttpClient) { }
 
   gtAppoinmentClssList():Observable<AppoinmentClssPayloads[]>{
-    return this.httpClient.get<AppoinmentClssPayloads[]>(`${this.baseURL}`);
+    return this.httpClient.get<AppoinmentClssPayloads[]>(`http://localhost:8080/api/v1/appoinmentClass/all`);
   }
   createAppoinmentClss(appoinmentClssPayloads : AppoinmentClssPayloads ):Observable<object>{
     return this.httpClient.post(`${this.baseURL}`,appoinmentClssPayloads);
