@@ -4,5 +4,5 @@ export class AppoinmentClssPayloads {
     appoinmentDate:Date;
     appoinmentTime:Time;
     username:string;
-    taken:Number;
+    taken:number;
 }

@@ -12,7 +12,7 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
 
   appoinmentClass:AppoinmentClssPayloads = new AppoinmentClssPayloads
   allAppoinments:AppoinmentClssPayloads[];
-  date;
+  
 
   constructor(private appoinmentClssPayloadsService:AppoinmentClssPayloadsService ,
     private router:Router){}
@@ -28,6 +28,7 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
         this.allAppoinments=data;
         for(let app in this.allAppoinments){
           console.log(data[app].appoinmentDate)
+          console.log(data[app].taken)
         }
         
         
@@ -50,8 +51,32 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
 
   onSubmit(){
     
-    console.log(this.appoinmentClass);
-    this.saveAppoinments();
+   
+    
+    console.log(this.appoinmentClass.appoinmentDate);
+    console.log(this.appoinmentClass.taken);
+    this.appoinmentClssPayloadsService.gtAppoinmentClssList().subscribe(data =>{
+    
+     
+      for(let app in this.allAppoinments){
+        
+        if(data[app].appoinmentDate == this.appoinmentClass.appoinmentDate)
+        { 
+          
+          this.appoinmentClass.taken = data[app].taken+1;
+          //this.saveAppoinments();
+        }
+
+        else{
+          
+        }
+      
+        
+      }
+      console.log("the new taken is  ",this.appoinmentClass.taken);
+      this.saveAppoinments();
+    })
+    
     
 
   }
