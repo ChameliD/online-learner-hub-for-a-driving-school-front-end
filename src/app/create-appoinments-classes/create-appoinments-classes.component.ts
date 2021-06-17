@@ -49,10 +49,7 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
     this.router.navigate(['/appoinmentClass']);
   }
 
-  onSubmit(){
-    
-   
-    
+  private check(): boolean{
     console.log(this.appoinmentClass.appoinmentDate);
     console.log(this.appoinmentClass.taken);
     this.appoinmentClssPayloadsService.gtAppoinmentClssList().subscribe(data =>{
@@ -60,25 +57,29 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
      
       for(let app in this.allAppoinments){
         
-        if(data[app].appoinmentDate == this.appoinmentClass.appoinmentDate)
+        if(data[app].appoinmentDate == this.appoinmentClass.appoinmentDate && data[app].appoinmentTime == this.appoinmentClass.appoinmentTime)
         { 
+          if(data[app].taken < 5){
+            console.log("taken");
           
-          this.appoinmentClass.taken = data[app].taken+1;
-          //this.saveAppoinments();
+            this.appoinmentClass.taken = data[app].taken+1;
+            //this.saveAppoinments();
+            //return true;
+          }
+          else{
+            console.log("Sorry can you select another time slot")
+            return false;
+          }
         }
-
-        else{
-          
-        }
-      
-        
       }
       console.log("the new taken is  ",this.appoinmentClass.taken);
       this.saveAppoinments();
     })
+    return true;
+  }
+  onSubmit(){
+    var finalResult =this.check();
     
-    
-
   }
 
 }
