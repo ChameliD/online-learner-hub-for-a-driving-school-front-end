@@ -27,20 +27,16 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
       this.appoinmentClssPayloadsService.gtAppoinmentClssList().subscribe(data =>{
         this.allAppoinments=data;
         for(let app in this.allAppoinments){
-          console.log(data[app].appoinmentDate)
-          console.log(data[app].taken)
+         // console.log(data[app].appoinmentDate)
+          //console.log(data[app].taken)
         }
-        
-        
       })
-    
   }
 
   saveAppoinments(){
     this.appoinmentClssPayloadsService.createAppoinmentClss(this.appoinmentClass).subscribe(data =>{
-      console.log(data);
+      //console.log(data);
       this.goToAppoinmentsList();
-
     }),
     error => console.log(error);
     
@@ -50,24 +46,23 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
   }
 
   private check(): boolean{
-    console.log(this.appoinmentClass.appoinmentDate);
-    console.log(this.appoinmentClass.taken);
+    //console.log(this.appoinmentClass.appoinmentDate);
+    //console.log(this.appoinmentClass.taken);
     this.appoinmentClssPayloadsService.gtAppoinmentClssList().subscribe(data =>{
-    
-     
       for(let app in this.allAppoinments){
         
         if(data[app].appoinmentDate == this.appoinmentClass.appoinmentDate && data[app].appoinmentTime == this.appoinmentClass.appoinmentTime)
         { 
           if(data[app].taken < 5){
-            console.log("taken");
+            //console.log("taken");
           
             this.appoinmentClass.taken = data[app].taken+1;
             //this.saveAppoinments();
             //return true;
           }
           else{
-            console.log("Sorry can you select another time slot")
+            //console.log("Sorry can you select another time slot")
+            this.router.navigateByUrl('/appoinment-errors');
             return false;
           }
         }

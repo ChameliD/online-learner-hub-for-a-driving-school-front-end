@@ -1,0 +1,15 @@
+.error{
+    text-align: center;
+    font-size: 350%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(172, 8, 8, 0.966);
+    text-decoration: none;
+}
+.messege{
+    text-align: center;
+    font-size: 200%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgba(4, 100, 84, 0.966);
+    text-decoration: none;
+}
+
