@@ -42,6 +42,7 @@ import { AppoinmentHomeComponent } from './appoinment-home/appoinment-home.compo
 import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driving.component';
 import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment-class-list.component';
 import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/create-appoinments-classes.component';
+import { AppoinmentErrorsComponent } from './appoinment-errors/appoinment-errors.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -78,6 +79,7 @@ import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/
     AppoinmentDrivingComponent,
     AppoinmentClassListComponent,
     CreateAppoinmentsClassesComponent,
+    AppoinmentErrorsComponent,
    
     
     
@@ -132,7 +134,8 @@ import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/
       {path: 'appoinments-datails/:id',component:AppoinmentsDetailsComponent,canActivate:[AuthGuard]},
 
       {path: 'appoinment-home',component:AppoinmentHomeComponent,canActivate:[AuthGuard]},
-
+      {path: 'appoinment-errors',component:AppoinmentErrorsComponent,canActivate:[AuthGuard]},
+      
       {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]}
       
      

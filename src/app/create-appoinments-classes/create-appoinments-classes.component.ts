@@ -68,6 +68,7 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
           }
           else{
             console.log("Sorry can you select another time slot")
+            this.router.navigateByUrl('/appoinment-errors');
             return false;
           }
         }
