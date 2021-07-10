@@ -21,8 +21,42 @@ h3.a{
   padding-left: 10pt;
 }
 
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+.imgDiv{
+  width: 100%;
+  height: auto;
+  
+  background-size: 100% 100%;
+  opacity: 0.5;
+
+}
+.containerCustom{
+  position: relative;
+}
+
+.title{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-weight: 40%;
+  font-size: 280%;
+  text-align: center;
+
+}
+.content{
+  position: relative;
+  top: 50%;
+  
+  transform: translate(-50%, -50%);
+
+  font-weight: 20%;
+  font-size: 180%;
 }
   

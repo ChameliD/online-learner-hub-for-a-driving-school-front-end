@@ -42,7 +42,7 @@ export class CreateAppoinmentsClassesComponent implements OnInit {
     
   }
   goToAppoinmentsList(){
-    this.router.navigate(['/appoinmentClass']);
+    this.router.navigate(['/appoinments']);
   }
 
   private check(): boolean{
