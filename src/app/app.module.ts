@@ -43,6 +43,7 @@ import { AppoinmentDrivingComponent } from './appoinment-driving/appoinment-driv
 import { AppoinmentClassListComponent } from './appoinment-class-list/appoinment-class-list.component';
 import { CreateAppoinmentsClassesComponent } from './create-appoinments-classes/create-appoinments-classes.component';
 import { AppoinmentErrorsComponent } from './appoinment-errors/appoinment-errors.component';
+import { LoginErrorComponent } from './login-error/login-error.component';
 
 //import {EditorModule} from '@tinymce/tinymce-angular';
 
@@ -80,6 +81,7 @@ import { AppoinmentErrorsComponent } from './appoinment-errors/appoinment-errors
     AppoinmentClassListComponent,
     CreateAppoinmentsClassesComponent,
     AppoinmentErrorsComponent,
+    LoginErrorComponent,
    
     
     
@@ -100,6 +102,7 @@ import { AppoinmentErrorsComponent } from './appoinment-errors/appoinment-errors
      // {path: 'post/:id', component: PostComponent},
       {path: 'login', component: LoginComponent},
       {path: 'register-success', component: RegisterSuccessComponent},
+      {path:'login-error',component:LoginErrorComponent},
       {path: 'home', component: HomeComponent},
       {path: 'our-service', component: OurServiceComponent},
       {path: 'faqs', component: FaqsComponent},
@@ -136,9 +139,11 @@ import { AppoinmentErrorsComponent } from './appoinment-errors/appoinment-errors
       {path: 'appoinment-home',component:AppoinmentHomeComponent,canActivate:[AuthGuard]},
       {path: 'appoinment-errors',component:AppoinmentErrorsComponent,canActivate:[AuthGuard]},
       
-      {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]}
+      {path:'quiz',component:QuizComponent,canActivate:[AuthGuard]},
+
+      {path:'q-a-form',component:QAFormComponent,canActivate:[AuthGuard]}
       
-     
+      
     ]),
     HttpClientModule,
     CommonModule

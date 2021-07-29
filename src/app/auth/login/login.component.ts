@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
         console.log("login success");
         this.router.navigateByUrl('/home');
       }else{
-        console.log("login fail");
+        this.router.navigateByUrl('/login-error');
       }
     });
   }
