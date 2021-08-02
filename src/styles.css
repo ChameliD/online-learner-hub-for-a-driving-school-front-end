@@ -186,14 +186,14 @@ body{
 }
 .quiz-box .answer-idicator div.correct{
     background-color: rgb(3, 184, 124);
-    background-image: url("E:/didNotUseKeyStore/employeeFrontEnd/empoyeeFrontEnd/src/correct.png");
+    background-image: url("/assets/images/correct.png");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
 }
 .quiz-box .answer-idicator div.wrong{
     background-color: rgb(184, 3, 3);
-    background-image: url("E:/didNotUseKeyStore/employeeFrontEnd/empoyeeFrontEnd/src/incorrect.png");
+    background-image: url("/assets/images/incorrect.png");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
