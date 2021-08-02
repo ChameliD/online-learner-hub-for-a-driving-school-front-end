@@ -1,0 +1,263 @@
+commit c1ec368116861e77c92fb2b2dcee7b2bc7473f11
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jul 29 15:28:28 2021 +0530
+
+    final adjusments
+
+commit 5f95311be23c478baacbcbf57d614acab81fe982
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jul 29 12:13:12 2021 +0530
+
+    final ajusments
+
+commit ec5dc720bbaa24334abecb5dfa4be19c4d4add38
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat Jul 10 16:01:00 2021 +0530
+
+    adding images
+
+commit 70b9013af1812896f0a664f149469904ad5db07f
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 17 14:51:22 2021 +0530
+
+    error and sucsses pages for appoinment handling
+
+commit 34c3210d6a7ae87fe6dc197b6387a0f32b0347bf
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 17 14:40:24 2021 +0530
+
+    error page for appoinments
+
+commit 6319784e31314cd227b44bc77786b4c43b970306
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 17 13:59:09 2021 +0530
+
+    added appoinment error components
+
+commit 1c57893b5d3b9fdb34ebf2844c1474b2060ef97c
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 17 13:37:18 2021 +0530
+
+    appoinment class.ts is completed
+
+commit 68ca219d8793070d4777196d5ac9812537344dfe
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 17 12:29:36 2021 +0530
+
+    appoinment making
+
+commit f933bea3bb62a2dc1e146ea3bfb2aa39bd99ba01
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 10 12:55:02 2021 +0530
+
+    appoinmets for classes
+
+commit 469851cc434728e99a72a7cb88268083fb45d591
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu Jun 10 12:54:21 2021 +0530
+
+    make appoinment for classes
+
+commit 3644cac1451662256ff66be9160fb759be83385c
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Jun 1 12:35:04 2021 +0530
+
+    appoinment for classes
+
+commit d8bb4559c9f34a6e524c487b5ecae162fd7fbf98
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Jun 1 10:24:54 2021 +0530
+
+    change appoinments for classes
+
+commit 9a91097834442d20863e1001cebeb1d9a09f4342
+Author: Chameli <chame9dil@gmail.com>
+Date:   Fri May 14 13:16:48 2021 +0530
+
+    add appoinment maker for theory classes
+
+commit aa2fd89cb78d3670a5eb2af96dbb6a571b7b7d22
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 13 17:28:07 2021 +0530
+
+    change css
+
+commit a609b5873dddee8734561701d5ed65077f83dccd
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 13 16:14:58 2021 +0530
+
+    fix bug in navbar
+
+commit 9db074b87cbe482001b77b3a03c61a5669e21385
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 13 12:02:14 2021 +0530
+
+    appoinment develop
+
+commit 41090e2d6c891a99c3218f72d977ae65fdb92607
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue May 11 13:45:21 2021 +0530
+
+    UI designing
+
+commit fe77f34905b8a1c795c81ea610de74aa40ac7ad4
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat May 8 20:07:59 2021 +0530
+
+    faq component added
+
+commit 226d4053af0f07fba75c47dcdc899633412dcd8b
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat May 8 19:34:37 2021 +0530
+
+    Ui design
+
+commit f0a552fd6283fe305586ceb05c63f1df3b53ba2b
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat May 8 18:52:24 2021 +0530
+
+    UI home page.our-service component
+
+commit 7c2aef755be2f3b77b7fbf2f20a61f6ba97e754f
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat May 8 10:52:16 2021 +0530
+
+    UI home page
+
+commit a7f2752b208aebf3b16bef41f4af30a7a11e79de
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sat May 8 10:35:37 2021 +0530
+
+    develope ui
+
+commit 1c9c57b6144b6c93c1847794c8b8aa043b664786
+Author: Chameli <chame9dil@gmail.com>
+Date:   Fri May 7 18:08:34 2021 +0530
+
+    added radio type
+
+commit 456dab7c5bcb07dac0f68d3092137601b92afdf3
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 6 17:47:33 2021 +0530
+
+    add auth-guard
+
+commit 40578ff587fd3beeaef84713be813f44d967ad63
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 6 16:36:12 2021 +0530
+
+    implemented logout
+
+commit 3e69c1649bbf1e110970660b9b0e2e24859bd252
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 6 15:16:12 2021 +0530
+
+    remove post
+
+commit 24b87220c7f49b5aef67122ffb7656abb5cdb46c
+Author: Chameli <chame9dil@gmail.com>
+Date:   Thu May 6 11:00:52 2021 +0530
+
+    view post
+
+commit 6d142cb4d2ab90333788e411e4c4060b4983fdc8
+Author: Chameli <chame9dil@gmail.com>
+Date:   Sun May 2 12:32:15 2021 +0530
+
+    add appoinment
+
+commit 7dac566fd6cd50205067f2e40acf8f672f2953da
+Author: Chameli <chame9dil@gmail.com>
+Date:   Wed Mar 17 22:02:16 2021 +0530
+
+    Appoinment Functions
+
+commit 1ada15698c9e660143e9bb01e03fc75498f1780e
+Author: Chameli <chame9dil@gmail.com>
+Date:   Wed Mar 17 21:38:49 2021 +0530
+
+    Add appoinments Components
+
+commit 6d46f104af19de2fed20e7c32c39ae480f1edae1
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 16 19:59:05 2021 +0530
+
+    added quiz component
+
+commit b343eb29062ef38caf745d2545481329d6a66f52
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 16 17:17:04 2021 +0530
+
+    header compleded
+
+commit c4877f8e3ea76a669c507a17fd114e98e35179c8
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 16 08:58:35 2021 +0530
+
+    cerate,update,list functions for employees,applicants and vehicles
+
+commit f04f578a1fa821191eadff403faa081379f819f6
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 16 08:16:47 2021 +0530
+
+    Added employee Applicant Vehicle
+
+commit 3cf3e61d1e2caa1b5c2edb80877a5bd25ce8b83a
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 2 18:58:06 2021 +0530
+
+    added add-post components
+
+commit b7ed530d1b19407e8310503a84761a760f87a98a
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 2 18:51:38 2021 +0530
+
+    added home components
+
+commit 7900afc3f195ebaf6fc57189b7e83b66d62a7809
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 2 14:20:20 2021 +0530
+
+    login succes
+
+commit a4522409915bebbaaf49ba590104cf0a5339449e
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Mar 2 13:10:41 2021 +0530
+
+    adding register succes
+
+commit 03c0ffbcd3c92b8eccc0133210274418dde043da
+Author: Chameli <chame9dil@gmail.com>
+Date:   Mon Jan 25 10:36:15 2021 +0530
+
+    debugging
+
+commit 43b01cfbf3216366c69889f2aab0d4cb6dbb72c2
+Author: Chameli <chame9dil@gmail.com>
+Date:   Fri Jan 22 12:15:49 2021 +0530
+
+    assembling
+
+commit 2726d910a09534bcdc2403dd7e2996548be1a28b
+Author: Chameli <chame9dil@gmail.com>
+Date:   Mon Jan 18 15:11:47 2021 +0530
+
+    delete,update,view employee functions
+
+commit 9c2c58bbdbf3b20825c69d6b69c33136dd607475
+Author: Chameli <chame9dil@gmail.com>
+Date:   Fri Jan 15 16:24:49 2021 +0530
+
+    adding service
+
+commit d1dc38a187960bb19fe0b68214760ee7edaf4e8f
+Author: Chameli <chame9dil@gmail.com>
+Date:   Fri Jan 15 12:20:37 2021 +0530
+
+    developing employee list
+
+commit 9a5131d39fafaa544c24af86d8d4d6bed8792120
+Author: Chameli <chame9dil@gmail.com>
+Date:   Tue Jan 5 12:04:56 2021 +0530
+
+    initial commit
